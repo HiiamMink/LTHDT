@@ -1,0 +1,368 @@
+bài 1:
+package lab2;
+	import java.util.Scanner;
+public class bai1 {
+    public static void main(String[] args) { 
+        Scanner So = new Scanner(System.in);
+        System.out.println("phuong trinh bac nhat co dang: ax + b = 0");
+        System.out.println("nhap a = ");
+        float a= So.nextFloat();
+        System.out.println("nhap b = ");
+        float b= So.nextFloat();
+        float c;
+        if (a==0){
+            if(b==0){
+                System.out.println("phuong trinh co vo so nghiem");
+            }else{
+                System.out.printf("phuong trinh vo nghiem");}
+        }else{
+            c=-b/a;
+            System.out.printf("phuong trinh co nghiem la :x = %f",c);
+            }
+        }
+    }  
+bài 2
+package lab2;
+	import java.util.Scanner;
+        import java.lang.Math;
+public class bai2 {
+    public static void main(String[] args) { 
+        Scanner n = new Scanner(System.in);
+        System.out.println("phuong trinh bac hai co dang: ax^2 + bx + c = 0");
+        System.out.println("nhap a = ");
+        float a= n.nextFloat();
+        System.out.println("nhap b = ");
+        float b= n.nextFloat();
+        System.out.println("nhap c = ");
+        float c= n.nextFloat();
+        if (a==0){
+           if(b==0){
+               if(c==0){
+                   System.out.println("vo so nghiem");}
+           else{
+               System.out.println("vo nghiem");}
+           }else{
+                   System.out.printf("phuong trinh co nghiem :x = %f",-c/b);}
+        } else{
+                      float d=(b*b-(4*a*c));
+                 if(d<0){
+                         System.out.println("vo nghiem");}
+                 else if(d==0){
+                         System.out.printf("nghiem kep :x1 = x2 = %f",-b/2*a);}
+                 else if (d>0){
+                         float x1 = (float)(-b+(Math.sqrt(d)/2*a));
+                         float x2 = (float)(-b-(Math.sqrt(d)/2*a));
+                         System.out.printf("phuong trinh co hai nghiem phan biet :x1 = %f , x2 = %f",x1,x2);
+                         }
+            }
+        }  
+    }
+bài 3:
+package lab2;
+	import java.util.Scanner;
+public class bai3 {
+    public static void main(String[] args) { 
+        Scanner s = new Scanner(System.in);
+        System.out.println("So dien su dung trong thang :");
+        float a= s.nextFloat();
+        if (a>=0 && a<=50){
+            float t = a*1000;
+            System.out.printf("Tong so tien dien phai tra trong thang la: %f",t);}
+        else{
+            float t = (a-50)*1200+50*1000;
+            System.out.printf("Tong so tien dien phai tra trong thang la: %f",t);}
+    }
+}
+bài 4:
+package bai4;
+         import java.util.Scanner;
+         import java.lang.Math;
+public class bai4 {
+    // Ham pt bac 1
+    private static void bai1(){ 
+        Scanner So = new Scanner(System.in);
+        System.out.println("phuong trinh bac nhat co dang: ax + b = 0");
+        System.out.println("nhap a = ");
+        float a= So.nextFloat();
+        System.out.println("nhap b = ");
+        float b= So.nextFloat();
+        float c;
+        if (a==0){
+            if(b==0){
+                System.out.println("phuong trinh co vo so nghiem");
+            }else{
+                System.out.printf("phuong trinh vo nghiem");}
+        }else{
+            c=-b/a;
+            System.out.printf("phuong trinh co nghiem la :x = %f",c);
+            }
+        }
+    }  
+    // Ham pt bac 2
+    private static void bai2(){ 
+        Scanner n = new Scanner(System.in);
+        System.out.println("phuong trinh bac hai co dang: ax^2 + bx + c = 0");
+        System.out.println("nhap a = ");
+        float a= n.nextFloat();
+        System.out.println("nhap b = ");
+        float b= n.nextFloat();
+        System.out.println("nhap c = ");
+        float c= n.nextFloat();
+        if (a==0){
+           if(b==0){
+               if(c==0){
+                   System.out.println("vo so nghiem");}
+           else{
+               System.out.println("vo nghiem");}
+           }else{
+                   System.out.printf("phuong trinh co nghiem :x = %f",-c/b);}
+        } else{
+                      float d=(b*b-(4*a*c));
+                 if(d<0){
+                         System.out.println("vo nghiem");}
+                 else if(d==0){
+                         System.out.printf("nghiem kep :x1 = x2 = %f",-b/2*a);}
+                 else if (d>0){
+                         float x1 = (float)(-b+(Math.sqrt(d)/2*a));
+                         float x2 = (float)(-b-(Math.sqrt(d)/2*a));
+                         System.out.printf("phuong trinh co hai nghiem phan biet :x1 = %f , x2 = %f",x1,x2);
+                         }
+            }
+        }  
+    }
+    // Ham tinh tien dien 
+    private static void bai3(){
+         Scanner s = new Scanner(System.in);
+        System.out.println("So dien su dung trong thang :");
+        float a= s.nextFloat();
+        if (a>=0 && a<=50){
+            float t = a*1000;
+            System.out.printf("Tong so tien dien phai tra trong thang la: %f",t);}
+        else{
+            float t = (a-50)*1200+50*1000;
+            System.out.printf("Tong so tien dien phai tra trong thang la: %f",t);}
+    }
+}
+    public static void main(String[] args) { 
+        Scanner s= new Scanner(System.in);
+                  System.out.println("Vui long Chon 1:Giai phuong trinh bac nhat");
+                  System.out.println("Vui long chon 2:Giai phuong trinh bac 2");
+                  System.out.println("Vui long chon 3:tinh tien dien da su dung trong thang");
+                  System.out.println("Vui long chon 4:Ket thuc chuong trinh");
+                  int a= s.nextInt();
+        switch (a){
+        case 1: bai1(); break;
+        case 2: bai2(); break;
+        case 3: bai3(); break;
+        case 4: System.out.println("Cam on va hen gap lai. "); break;
+        default: System.out.print("Nhap sai !!! Nhap lai:");        
+        }
+    }
+}
+bài 5:
+package lab2;
+ 	import java.util.Scanner;
+ 	import java.lang.Math;
+public class bai5 {
+    static boolean kiemtrasochinhphuong(double a)
+    {
+        double b = Math.sqrt(a);
+        return ((b - Math.floor(a)) == 0);
+    }
+    public static void main(String[] args) { 
+        Scanner s= new Scanner(System.in);
+        System.out.printf("nhap so can kiem tra: ");
+        double b = s.nextDouble();
+        if(kiemtrasochinhphuong(b=0)){
+            System.out.println( " la so chinh phuong ");}
+        else{
+            System.out.println( " khong la so chinh phuong");
+        }
+    }
+}
+bài 6:
+package lab2;
+    import java.util.Scanner;
+    
+public class bai6 {
+      public static void main(String[] args) { 
+         Scanner S = new Scanner(System.in);
+         System.out.println("nhap diem trung binh cua hoc sinh:");
+         float a= S.nextFloat();
+         if (a<5){
+              System.out.println("kem");}
+         else if(5<=a && a<7){
+             System.out.println("trung binh");}
+         else if( a>=7 && a<=8){
+             System.out.println("kha");
+         }
+         else{
+             System.out.println("gioi");
+         }
+      }
+}
+bài 7:
+package lab2;
+   	import java.util.Scanner;
+public class bai7 {
+    public static void main(String[] args) {
+        Scanner So = new Scanner(System.in);
+        System.out.printf("nhap so = ");
+        int x= So.nextInt();
+        int donvi = x%10;
+        int chuc = (x/10)%10;
+        int tram = x/100;
+        if( x<100 || x>999){
+            System.out.printf("nhap lai so co 3 chu so:");
+        }else{
+            switch(tram){
+      case 1: 
+      System.out.printf("Mot tram ");break;
+      case 2: 
+      System.out.printf("Hai tram ");break;
+      case 3: 
+      System.out.printf("Ba tram ");break;
+      case 4: 
+      System.out.printf("Bon tram ");break;
+      case 5: 
+      System.out.printf("Nam tram ");break;
+      case 6: 
+      System.out.printf("Sau tram ");break;
+      case 7: 
+      System.out.printf("Bay tram ");break;
+      case 8: 
+      System.out.printf("Tam tram ");break;
+      case 9: 
+      System.out.printf("Chin tram ");break;}
+        if(chuc % 10 == 0 && donvi != 0){
+           System.out.printf("le ");
+    } 
+    switch(chuc){
+      case 1: System.out.printf("muoi ");break;
+      case 2: System.out.printf("hai muoi ");break;
+      case 3: System.out.printf("ba muoi ");break;
+      case 4: System.out.printf("bon muoi ");break;
+      case 5: System.out.printf("nam muoi ");break;
+      case 6: System.out.printf("sau muoi ");break;
+      case 7: System.out.printf("bay muoi ");break;
+      case 8: System.out.printf("tam muoi ");break;
+      case 9: System.out.printf("chin muoi ");break;}
+      switch(donvi){
+      case 1: System.out.printf("mot ");break;
+      case 2: System.out.printf("hai ");break;
+      case 3: System.out.printf("ba ");break;
+      case 4: System.out.printf("bon ");break;
+      case 5: System.out.printf("lam ");break;
+      case 6: System.out.printf("sau ");break;
+      case 7: System.out.printf("bay ");break;
+      case 8: System.out.printf("tam ");break;
+      case 9: System.out.printf("chin ");break;}
+        }
+    }
+}
+bài 8:
+package lab2;
+	import java.util.Scanner;
+public class bai8 {
+    public static void main(String[] args) {
+        int a;
+        System.out.println("Nhap vao so can tinh: ");
+        Scanner S = new Scanner(System.in);
+         a = S.nextInt();
+         double kq = 1;
+        int i = 1;
+        for (i=1;i<=a;i++)
+        {
+            kq = kq * i;
+           
+        }
+        System.out.println("Giai thua cua "+a+" la: "+kq);
+    }
+}
+bài 9:
+package lab2;
+		import java.util.Scanner;
+public class bai9 {
+     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int x, n, i, xoa;
+        int dem = 0;
+        int tam;
+        do{
+            System.out.print("Nhap so luong phan tu: ");
+            n = input.nextInt();
+            if(n<0){
+                 System.out.println("Sai vui long  nhap lai:");
+            }
+        }while(n<0);
+         double[] a = new double [n];
+        for (i = 0; i < n; i++) {
+            System.out.print("a[" + i + "] =  ");
+            a[i] = input.nextDouble();
+        }
+        System.out.println("mang theo thu tu tang dan");
+        for (i=0;i<n-1;i++){
+            for(int j=i+1;j<n;j++){
+                if(a[i]>a[j]){
+                    tam= (int)a[i];
+                    a[i]=a[j];
+                    a[j]=tam;
+                }
+            }
+        }
+        for (i=0;i<n;i++){
+            System.out.print(a[i] + " ");
+        }
+        System.out.print("\ncan xoa: ");
+        xoa = input.nextInt();
+        for (i = 0; i < n; i++) {
+            if (a[i] == xoa) {
+                for (int j = i; j < (n - 1); j++) {
+                a[j] = a[j + 1];
+                }
+                dem++;
+                break;
+            }
+        }
+        
+        if (dem == 0) {
+            System.out.print("Khong hop le, hay nhap lai");
+        }   
+        else {
+            System.out.println("mang sau khi xoa");
+            for (i = 0; i < (n - 1); i++) {
+                System.out.print(a[i] + " ");
+            }
+        }  
+    }
+}
+bài 10:
+package lab2;
+	import java.util.Scanner;
+public class bai10 {
+    public static void main(String[] args){
+        Scanner input= new Scanner(System.in);
+        int n;
+        do{
+            System.out.print("Nhap cap cua ma tran : ");
+            n= input.nextInt();
+            if(n<0){
+                System.out.println(" Loi vui long nhap lai:");
+            }
+        }while(n<0);
+        float [][] a = new float [n][n];
+        System.out.println("Nhap gia tri ma tran vuong");
+        for(int i=0;i<n;i++){
+            for(int m=0;m<n;m++){
+                System.out.print( "Phan tu ma tran a [" + i + "][" + m + "] ");
+                a[m][i]=a[i][m]= input.nextFloat();
+            }
+        }
+        for(int i=0; i<n ; i++){
+            for (int j=0; n>j; j++){
+                System.out.print(a[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
