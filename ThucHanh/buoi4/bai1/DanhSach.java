@@ -76,7 +76,7 @@ public class DanhSach {
                     "1.Them giao dich\n" +
                     "2.Xuat giao dich\n" +
                     "3.Tong so luong tung loai\n" +
-                    "4.Tinh trung binh thanh tien cua giao dich dat\n" +
+                    "4.Tinh trung binh thanh tien\n" +
                     "5.Xuat cac giao dich ngay hom nay\n");
     }
 
